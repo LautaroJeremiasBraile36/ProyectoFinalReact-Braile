@@ -31,7 +31,10 @@
 }
 
 .parrafoNosotros {
+  padding: 24px 36px;
   font-size: 1.3rem;
   font-weight: 400;
   text-align: justify;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }

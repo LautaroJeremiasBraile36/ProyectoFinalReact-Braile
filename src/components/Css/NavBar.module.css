@@ -1,11 +1,11 @@
 .navbar {
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(15, 182, 15);
+  background-color: rgb(22, 22, 22);
   height: 20vh;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   padding: 15px;
@@ -18,19 +18,11 @@
 }
 
 .navlinks {
+  text-decoration: none;
   font-size: 1.2rem;
   font-weight: 400;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  color: aliceblue;
-  gap: 40px;
-}
 
-.navlinks a {
-  list-style: none;
   cursor: pointer;
-  text-decoration: none;
   color: white;
+  list-style: none;
 }
