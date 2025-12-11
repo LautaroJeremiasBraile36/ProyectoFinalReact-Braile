@@ -8,15 +8,8 @@ import CheckOut from "./Pages/CheckOut";
 import Contact from "./Pages/Contact";
 import NotFound404 from "./Pages/NotFound404";
 import Us from "./Pages/Us";
-import { uploadProducts } from "./utils/uploadProducts";
-import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((respuesta) => respuesta.json())
-      .then((data) => uploadProducts(data));
-  }, []);
   return (
     <>
       <NavBar />
