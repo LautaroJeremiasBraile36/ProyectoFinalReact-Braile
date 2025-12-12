@@ -1,4 +1,4 @@
-import GetDocsDB from "../utils/getDocsDB";
+import GetDocsDB from "../utils/GetDocsDB";
 import GetDocsDBProvider from "../context/GetDocsDBProvider";
 
 const Products = () => {
