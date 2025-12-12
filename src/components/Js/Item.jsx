@@ -3,6 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import styles from "../Css/Item.module.css";
 import ItemCount from "./ItemCount";
 
+import Loader from "./Loader";
+
 function Item() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ function Item() {
       .then((data) => setProduct(data));
   }, [id]);
 
-  if (!product) return <p className={styles.loading}>Cargando...</p>;
+  if (!product) return <Loader />;
 
   return (
     <div className={styles.container}>
